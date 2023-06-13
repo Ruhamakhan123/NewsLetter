@@ -49,7 +49,7 @@ app.post("/",function(req,res){
         }
         })
     })
-    //re.write(jsonData);
+    re.write(jsonData);
     re.end()
     
 })
