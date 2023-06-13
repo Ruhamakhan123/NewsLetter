@@ -35,7 +35,7 @@ app.post("/",function(req,res){
     //const apiKey ="dc2c76e4-72c6-499c-97fb-3f9f3fd02972"
     const options={
         method:"POST",
-        auth:"ruhama:5ffcc0b0be983422b9dad8330e50afab-us21"
+        auth:"ruhama:e793822a6e9393ad5157fb6231718b5f-us21"
     }
     const re=http.request(url,options,function(response){
         response.on("data",function(data){
@@ -58,6 +58,11 @@ app.post("/",function(req,res){
 app.post("/failure",function(req,res){
     res.redirect("/")
 })
+app.post("/success",function(req,res){
+    res.redirect("/")
+})
+
+
 
 app.listen(3000,function(){
     console.log("Server is up and running");
